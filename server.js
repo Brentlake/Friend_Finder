@@ -14,15 +14,15 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
  
 
-//require('app/routing/api-routes.js')(app);
-//require('app/routing/html-routes.js')(app);
+//require('./app/routing/api-routes.js')(app);
+//require('./oapp/routing/html-routes.js')(app);
 
 app.listen(PORT, function(){
 
 	console.log("App listening on port: " + PORT);
 });
 
-var answers = 0;
+var answers;
  
  //for (i = 0; i < answers.length){
 

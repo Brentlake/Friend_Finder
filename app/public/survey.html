@@ -41,7 +41,7 @@
 <p>Your mind is always buzzing with unexplored ideas and plans.</p>
   <!-- Dropdown Trigger -->
   <a class='dropdown-button btn' href='#' data-activates='dropdown1'>(1 Strongly disagree)</a>
-  
+
 
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
@@ -162,4 +162,20 @@
 
 
 </body>
+
+<script type="text/javascript"></script>
+function runTableQuery(){
+	var currentURL = window.location.origin; 	
+
+	$.ajax({url: currentURL + "api/survey", method: "GET"})
+	.done(function(friendsData){
+	console.log("------------------");
+	console.log("URL " + currentURL + "api/survey");
+	console.log(tableArray);
+	console.log("--------------------")
+	});	
+}
+runTableQuery();
+</script>
+
 </html>
