@@ -15,7 +15,7 @@ app.use(bodyParser.json())
  
 
 //require('./app/routing/api-routes.js')(app);
-//require('./oapp/routing/html-routes.js')(app);
+//require('./oapp/routing/html-routes.js')(app);//having issues getting page to require(have tried mand different paths)
 
 app.listen(PORT, function(){
 
@@ -28,3 +28,4 @@ var answers;
 
  	//if (answers <)
  //}
+ //have not been able to get the home page to display on local host server so i have been trying anything and everything so i can finish app.

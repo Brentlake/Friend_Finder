@@ -12,3 +12,4 @@ module.exports = function (app){
     res.sendFile(path.join(__dirname + '../public/home.html'));
 });
 }
+//app.use not displaying homepage when i got to local host it is showing "cannot GET /""
